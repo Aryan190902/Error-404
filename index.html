@@ -100,12 +100,13 @@
         }
         
         .landingImage img {
-            width: 28vw;
+            width: 18vw;
         }
         /* ABOUT CSS */
         
         .about {
             height: 600px;
+            margin-top: 100px;
             padding: 50px;
             display: flex;
             flex-direction: row;
@@ -120,14 +121,16 @@
         }
         
         .aboutText h1 {
+            font-size: 42px;
             position: relative;
-            left: 110px;
+            left: 620px;
+            top: 55px;
         }
         
         .aboutText img {
-            width: 10vw;
+            width: 30vw;
             position: absolute;
-            top: 50px;
+            top: -20px;
         }
         
         .aboutList {
@@ -362,7 +365,7 @@
         #cardthreeImg:hover {
             transform: translateX(-160px);
         }
-        /* Corona updates */
+        /* Corona */
         
         .corSticky {
             position: fixed;
@@ -474,7 +477,7 @@
                 font-size: 3vw;
             }
             .landingImage img {
-                width: 52vw;
+                width: 30vw;
                 margin-bottom: 20px;
             }
             /* ABOUT */
@@ -491,13 +494,14 @@
                 height: 100px;
             }
             .aboutText h1 {
-                left: 40px;
-                font-size: 5vw;
+                left: 75px;
+                font-size: 9vw;
+                top: -15px;
             }
             .aboutText img {
-                width: 16vw;
-                top: 10px;
-                left: -30px;
+                width: 42vw;
+                top: -55px;
+                left: -20px;
             }
             .aboutList {
                 width: 75%;
@@ -549,6 +553,7 @@
             .footer {
                 padding-bottom: 40px;
             }
+            /* Corona */
             .corSticky {
                 width: 100%;
                 position: fixed;
@@ -624,7 +629,6 @@
                 <a id="corona" href="#" class="mainlink">Corona Updates</a>
                 <a href="#">Help</a>
                 <a href="#">About</a>
-                <a href="#">Contact</a>
             </div>
         </div>
 
@@ -646,7 +650,7 @@
           </div>
         </div>
         <div class="landingImage" data-aos="fade-down" data-aos-duration="2000">
-          <img src="img/bg.png" alt="" />
+          <img src="img/corona.png" alt="" />
         </div>
       </div>
 
@@ -1744,37 +1748,35 @@
 
     <div class="about">
         <div class="aboutText" data-aos="fade-up" data-aos-duration="1000">
-            <h1>
-                Why is it important that <br />
-                <span style="color: #2f8be0; font-size: 3vw">You Stay Home?</span>
+            <h1 id="abtext">
+                Why and How to
+                <span style="color: #2f8be0">Use this Website</span>
             </h1>
-            <img src="img/doctor-woman-400px.png" alt="" />
+            <img src="img/covidimage-removebg-preview.png" alt="" />
         </div>
         <div class="aboutList" data-aos="fade-left" data-aos-duration="1000">
             <ol>
                 <li>
                     <span>01</span>
                     <p>
-                        Covid-19, which is now a fast growing global pandemic. The number of confirmed cases worldwide has exceeded 25,65,000 due to rapid spreading of the virus.
+                        This website serves you by giving you details about how to contact Police, Hospital or Fire Brigade in times of need.
                     </p>
                 </li>
                 <li>
                     <span>02</span>
                     <p>
-                        Covid-19, spreads very easily, much easier than many other regular illnesses we deal with on a regular basis. That's what makes it so dangerous.
+                        You can also get various information about various diseases by using our Chatbot.
                     </p>
                 </li>
                 <li>
                     <span>03</span>
                     <p>
-                        The best course of action is to stay at home prevent the spread of the disease as well as hospitals getting overwhelmed with patients who simply shoudn't be there.
+                        We also provide locations of nearby hospitals and police Stations through the map provided below.
                     </p>
                 </li>
                 <li>
                     <span>04</span>
-                    <p>
-                        As of today, there is no know cure and no approved vaccine for Covid-19
-                    </p>
+                    <p>Stay Calm, Stay Safe and Stay Healthy!</p>
                 </li>
             </ol>
         </div>
@@ -1880,13 +1882,14 @@
     <div class="banner">
         <div class="bannerText" data-aos="fade-right" data-aos-duration="1000">
             <h1>
-                Download the HealthCare App Today. <br />
+                Interact with Our Chatbot <br />
                 <span style="font-size: 1.6vw; font-weight: normal" class="bannerInnerText">
               Stay Updated and get all your medical needs taken care of!
             </span>
             </h1>
-            <a href="#"> <img src="img/AndroidPNG.png" alt="" /> </a>
-            <a href="#"> <img src="img/iosPNG.png" alt="" /> </a>
+            <a href="#">
+                <img src="img/chatbot-logo-removebg-preview.png" alt="" />
+            </a>
         </div>
         <div class="bannerImg" data-aos="fade-up" data-aos-duration="1000">
             <img src="img/MobileApp.png" alt="" />
@@ -1895,7 +1898,7 @@
 
     <!-- Maps -->
 
-    <iframe id="maps" width="1500" height="450" style="border: 5" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/search?q=hospitals%20in%20indore&key=AIzaSyDd2AeyXCohymH6I8R7XrtPlxvpm4e2Xls"></iframe>
+    <iframe id="maps" width="1600" height="450" style="border: 5" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/search?q=hospitals%20in%20indore&key=AIzaSyDd2AeyXCohymH6I8R7XrtPlxvpm4e2Xls"></iframe>
 
     <!-- Footer -->
 
@@ -1905,7 +1908,6 @@
             <a href="#" class="mainlink">Corona Updates</a>
             <a href="#">Help</a>
             <a href="#">About</a>
-            <a href="#">Contact</a>
         </div>
     </div>
     </div>
@@ -1914,66 +1916,6 @@
     <script src="index.js"></script>
     <script>
         AOS.init();
-
-        map = document.getElementById('maps');
-        // console.log(map.src)
-        var mapId;
-        var Place;
-
-        mapPolice = document.getElementById('mapPolice');
-        mapFire = document.getElementById('mapFire');
-        mapAmbu = document.getElementById('mapAmbu');
-
-        mapPolice.addEventListener('click', police);
-        mapFire.addEventListener('click', fire);
-        mapAmbu.addEventListener('mouseover', ambu);
-
-        function police() {
-            var mapId = 'police%20station';
-            map.src =
-                'https://www.google.com/maps/embed/v1/search?q=' +
-                mapId +
-                '%20in%20bhopal&key=AIzaSyDd2AeyXCohymH6I8R7XrtPlxvpm4e2Xls';
-            console.log(map.src);
-        }
-
-        function fire() {
-            var mapId = 'fire%20station';
-            map.src =
-                'https://www.google.com/maps/embed/v1/search?q=' +
-                mapId +
-                '%20in%20bhopal&key=AIzaSyDd2AeyXCohymH6I8R7XrtPlxvpm4e2Xls';
-            console.log(map.src);
-        }
-
-        function ambu() {
-            var mapId = 'hospitals';
-            map.src =
-                'https://www.google.com/maps/embed/v1/search?q=' +
-                mapId +
-                '%20in%20bhopal&key=AIzaSyDd2AeyXCohymH6I8R7XrtPlxvpm4e2Xls';
-            // document.body.style.backgroundColor = 'Pink'
-        }
-
-        // map.src = 'https://www.google.com/maps/embed/v1/search?q=' + { mapId } + '%20in%20bhopal&key=AIzaSyDd2AeyXCohymH6I8R7XrtPlxvpm4e2Xls'
-
-        // Updates
-
-        updates = document.getElementById('updates');
-
-        updates.style.display = 'none';
-
-        corona = document.getElementById('corona');
-
-        corona.addEventListener('click', update);
-
-        function update() {
-            if (updates.style.display == 'none') {
-                updates.style.display = 'block';
-            } else {
-                updates.style.display = 'none';
-            }
-        }
     </script>
 </body>
 
