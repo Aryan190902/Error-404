@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 map = document.getElementById('maps')
     // console.log(map.src)
 var mapId
