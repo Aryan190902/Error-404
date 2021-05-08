@@ -11,6 +11,10 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <style>
+        [data-aos^='fade'][data-aos^='fade'].aos-animate {
+            transform: none;
+        }
+        
         html,
         body {
             background-color: #fff;
@@ -183,24 +187,25 @@
         }
         
         .infoCards .one .cardoneImg {
-            width: 180px;
+            width: 240px;
             position: absolute;
-            top: -50px;
-            right: -50px;
+            top: -0px;
+            right: -20px;
         }
         
         .infoCards .two .cardtwoImg {
-            width: 158px;
+            width: 250px;
+            height: 150px;
             position: absolute;
-            top: -50px;
-            right: -50px;
+            top: 5px;
+            right: -20px;
         }
         
         .infoCards .three .cardthreeImg {
-            width: 200px;
+            width: 250px;
             position: absolute;
-            top: -50px;
-            right: -50px;
+            top: -0px;
+            right: -20px;
         }
         
         .cardbgone {
@@ -296,63 +301,66 @@
         .footerlinks .mainlink {
             color: #e0501b;
         }
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-            }
-
-        .dropdown-content a {
-            float: none;
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
+        /* Counter */
+        
+        .counter .box-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 2rem 0;
+        }
+        
+        .counter .box-container .box {
+            margin: 2rem 5rem;
+            text-align: center;
+        }
+        
+        .counter .box-container .box i {
+            color: var(--blue);
+            font-size: 5rem;
+        }
+        
+        .counter .box-container .box span {
+            color: var(--black);
+            font-size: 3rem;
             display: block;
-            text-align: left;
-            }
-
-        .dropdown-content a:hover {
-            background-color: #ddd;
-            }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-            }
-        .navbar {
-        overflow: hidden;
-        background-color: #333;
+            padding: 1rem 0;
         }
-
-        .navbar a {
-        float: left;
-        font-size: 16px;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
+        
+        .counter .box-container .box h3 {
+            color: #666;
         }
-
-        .dropdown {
-        float: left;
-        overflow: hidden;
+        
+        .fas {
+            width: 20%;
+            height: 20%;
         }
-
-        .dropdown .dropbtn {
-        font-size: 16px;  
-        border: none;
-        outline: none;
-        color: black;
-        padding: 14px 16px;
-        background-color: inherit;
-        font-family: inherit;
-        margin: 0;
+        
+        #cardoneImg {
+            transition: transform 0.9s ease;
+            transform: translateX(0px);
         }
-
-        .navbar a:hover, .dropdown:hover .dropbtn {
-        background-color: red;
+        
+        #cardoneImg:hover {
+            transform: translateX(-160px);
+        }
+        
+        #cardtwoImg {
+            transition: transform 0.9s ease;
+            transform: translateX(0px);
+        }
+        
+        #cardtwoImg:hover {
+            transform: translateX(-160px);
+        }
+        
+        #cardthreeImg {
+            transition: transform 0.9s ease;
+            transform: translateX(0px);
+        }
+        
+        #cardthreeImg:hover {
+            transform: translateX(-160px);
         }
         /* RESPONSIVE */
         
@@ -471,7 +479,6 @@
             .footer {
                 padding-bottom: 40px;
             }
-            
         }
     </style>
 </head>
@@ -484,16 +491,9 @@
             </div>
             <div class="links">
                 <a href="#" class="mainlink">Corona Updates</a>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn"><b>Services</b> 
-                  <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                  <a href="#">Nearby Hospitals</a>
-                  <a href="#">Police Stations</a>
-                  <a href="#"></a>
-                </div>
+                <a href="#">Help</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
             </div>
         </div>
 
@@ -570,7 +570,9 @@
             </div>
             <div class="infoCards">
                 <div class="card one" data-aos="fade-up" data-aos-duration="1000">
-                    <img src="img/movie.png" class="cardoneImg" alt="" data-aos="fade-up" data-aos-duration="1100" />
+                    <div id="cardoneImg">
+                        <img src="img/police2.png" class="cardoneImg" alt="" data-aos="fade-up" data-aos-duration="1100" />
+                    </div>
                     <div class="cardbgone"></div>
                     <div class="cardContent">
                         <h2>Binge Watch</h2>
@@ -585,7 +587,9 @@
                     </div>
                 </div>
                 <div class="card two" data-aos="fade-up" data-aos-duration="1300">
-                    <img src="img/learn.png" class="cardtwoImg" alt="" data-aos="fade-up" data-aos-duration="1200" />
+                    <div id="cardtwoImg">
+                        <img src="img/fire.png" class="cardtwoImg" alt="" data-aos="fade-up" data-aos-duration="1200" />
+                    </div>
                     <div class="cardbgtwo"></div>
                     <div class="cardContent">
                         <h2>Learn a New Skill</h2>
@@ -600,10 +604,12 @@
                     </div>
                 </div>
                 <div class="card three" data-aos="fade-up" data-aos-duration="1600">
-                    <img src="img/videocall.png" class="cardthreeImg" alt="" data-aos="fade-up" data-aos-duration="1300" />
+                    <div id="cardthreeImg">
+                        <img src="img/ambulance.png" class="cardthreeImg cardthreeImg2" alt="" data-aos="fade-up" data-aos-duration="1300" />
+                    </div>
                     <div class="cardbgone"></div>
                     <div class="cardContent">
-                        <h2>Video Call</h2>
+                        <h2>Track My Ambulance</h2>
                         <p>
                             Have fun video calling your friends or family this Quarantine!
                         </p>
@@ -616,6 +622,37 @@
                 </div>
             </div>
         </div>
+
+        <!-- Counter -->
+        <section class="counter">
+            <div class="container">
+                <div class="box-container">
+                    <div class="box" data-aos="fade-up">
+                        <i class="fas fa-hospital"></i>
+                        <span>120+</span>
+                        <h3>Hospitals</h3>
+                    </div>
+
+                    <div class="box" data-aos="fade-up">
+                        <i class="fas fa-users"></i>
+                        <span>100+</span>
+                        <h3>staff</h3>
+                    </div>
+
+                    <div class="box" data-aos="fade-up">
+                        <i class="fas fa-smile"></i>
+                        <span>1200+</span>
+                        <h3>happy patients</h3>
+                    </div>
+
+                    <div class="box" data-aos="fade-up">
+                        <i class="fas fa-procedures"></i>
+                        <span>130+</span>
+                        <h3>bed facility</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- BANNER AND FOOTER -->
 
@@ -634,6 +671,12 @@
                 <img src="img/MobileApp.png" alt="" />
             </div>
         </div>
+
+        <!-- Maps -->
+
+        <iframe width="1600" height="450" style="border: 5" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/search?q=hospitals%20in%20indore&key=AIzaSyDd2AeyXCohymH6I8R7XrtPlxvpm4e2Xls"></iframe>
+
+        <!-- Footer -->
 
         <div class="footer">
             <h2>HealthCare.</h2>
