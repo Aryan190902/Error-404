@@ -52,7 +52,7 @@ function update() {
     } else {
         updates.style.display = 'none'
     }
-=======
+
 map = document.getElementById('maps')
     // console.log(map.src)
 var mapId
@@ -107,5 +107,6 @@ function update() {
     } else {
         updates.style.display = 'none'
     }
->>>>>>> 8ed52755c00b60524fc69429d0cb1e7c4abd107f
+
+}
 }
