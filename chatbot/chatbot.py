@@ -7,6 +7,6 @@ chatbot = ChatBot('Chatbot')
 
 
 trainer = ListTrainer(chatbot)
-chats = open("Database.txt", "r").readlines()
+chats = open("chatbot\\Database.txt", "r").readlines()
 trainer.train(chats)
 
