@@ -362,6 +362,76 @@
         #cardthreeImg:hover {
             transform: translateX(-160px);
         }
+        /* Corona */
+        
+        .corSticky {
+            position: fixed;
+            height: 30px;
+            right: 5%;
+            /* bottom: 0px; */
+            top: 10%;
+            -webkit-tap-highlight-color: transparent;
+            transition: all 1s cubic-bezier(0.33, 1, 0.68, 1);
+        }
+        
+        .corSticky-wrap {
+            width: 500px;
+            height: 300px;
+            background: #f4f4f4;
+            box-shadow: 0 -1px 15px 0 rgba(0, 0, 0, 0.22);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .corSticky-iteam-info {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0px;
+        }
+        
+        .tNum {
+            width: 70px;
+            text-align: right;
+            font-size: 35px;
+            font-weight: 700;
+            color: #717171;
+            letter-spacing: -0.5px;
+        }
+        
+        .dataupRed {
+            background: url('https://edata.ndtv.com/coronavirus/images/red-tp.svg') left 5px no-repeat;
+            padding-left: 25px;
+            margin-left: 40%;
+            color: #c30000;
+        }
+        
+        .datadownRed {
+            background: url('https://edata.ndtv.com/coronavirus/images/red-tp.svg') left 5px no-repeat;
+            padding-left: 25px;
+            margin-left: 40%;
+            color: #c30000;
+        }
+        
+        .datadownGen {
+            background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iOHB4IiBoZWlnaHQ9IjhweCIgdmlld0JveD0iMCAwIDggOCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNjAgKDg4MTAzKSAtIGh0dHBzOi8vc2tldGNoLmNvbSAtLT4KICAgIDx0aXRsZT5UcmlhbmdsZSBDb3B5PC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9InQzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTAwNi4wMDAwMDAsIC02MTMuMDAwMDAwKSIgZmlsbD0iIzdFRDMyMSIgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5NzYuMDAwMDAwLCA1MjQuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8cG9seWdvbiBpZD0iVHJpYW5nbGUtQ29weSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzQuMDAwMDAwLCA5My4wMDAwMDApIHNjYWxlKDEsIC0xKSB0cmFuc2xhdGUoLTM0LjAwMDAwMCwgLTkzLjAwMDAwMCkgIiBwb2ludHM9IjM0IDg5IDM4IDk3IDMwIDk3Ij48L3BvbHlnb24+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==') left center no-repeat;
+            padding-left: 25px;
+            margin-left: 40%;
+            color: #4f9a0a;
+        }
+        
+        .dataupGen {
+            background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iOHB4IiBoZWlnaHQ9IjhweCIgdmlld0JveD0iMCAwIDggOCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNjAgKDg4MTAzKSAtIGh0dHBzOi8vc2tldGNoLmNvbSAtLT4KICAgIDx0aXRsZT5UcmlhbmdsZSBDb3B5PC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9InQzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTAwNi4wMDAwMDAsIC02MTMuMDAwMDAwKSIgZmlsbD0iIzdFRDMyMSIgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5NzYuMDAwMDAwLCA1MjQuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8cG9seWdvbiBpZD0iVHJpYW5nbGUtQ29weSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzQuMDAwMDAwLCA5My4wMDAwMDApIHNjYWxlKDEsIC0xKSB0cmFuc2xhdGUoLTM0LjAwMDAwMCwgLTkzLjAwMDAwMCkgIiBwb2ludHM9IjM0IDg5IDM4IDk3IDMwIDk3Ij48L3BvbHlnb24+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==') left center no-repeat;
+            padding-left: 25px;
+            margin-left: 40%;
+            color: #4f9a0a;
+        }
+        
+        .dataNo {
+            text-align: center;
+            font-size: 37px;
+            font-weight: 700;
+        }
         /* RESPONSIVE */
         
         @media only screen and (max-width: 600px) {
@@ -479,6 +549,68 @@
             .footer {
                 padding-bottom: 40px;
             }
+            /* Corona */
+            .corSticky {
+                width: 100%;
+                position: fixed;
+                height: 30px;
+                right: 0%;
+                /* bottom: 0px; */
+                top: 17%;
+                -webkit-tap-highlight-color: transparent;
+                transition: all 1s cubic-bezier(0.33, 1, 0.68, 1);
+            }
+            .corSticky-wrap {
+                width: 100%;
+                height: 175px;
+                background: #f4f4f4;
+                box-shadow: 0 -1px 15px 0 rgba(0, 0, 0, 0.22);
+                position: relative;
+                overflow: hidden;
+            }
+            .corSticky-iteam-info {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                padding: 3px 0px;
+            }
+            .tNum {
+                width: 70px;
+                text-align: right;
+                font-size: 12px;
+                font-weight: 700;
+                color: #717171;
+                letter-spacing: -0.5px;
+            }
+            .dataupRed {
+                background: url('https://edata.ndtv.com/coronavirus/images/red-tp.svg') left 4px no-repeat;
+                padding-left: 15px;
+                margin-left: 40%;
+                color: #c30000;
+            }
+            .datadownRed {
+                background: url('https://edata.ndtv.com/coronavirus/images/red-tp.svg') left 4px no-repeat;
+                padding-left: 15px;
+                margin-left: 40%;
+                color: #c30000;
+            }
+            .datadownGen {
+                background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iOHB4IiBoZWlnaHQ9IjhweCIgdmlld0JveD0iMCAwIDggOCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNjAgKDg4MTAzKSAtIGh0dHBzOi8vc2tldGNoLmNvbSAtLT4KICAgIDx0aXRsZT5UcmlhbmdsZSBDb3B5PC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9InQzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTAwNi4wMDAwMDAsIC02MTMuMDAwMDAwKSIgZmlsbD0iIzdFRDMyMSIgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5NzYuMDAwMDAwLCA1MjQuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8cG9seWdvbiBpZD0iVHJpYW5nbGUtQ29weSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzQuMDAwMDAwLCA5My4wMDAwMDApIHNjYWxlKDEsIC0xKSB0cmFuc2xhdGUoLTM0LjAwMDAwMCwgLTkzLjAwMDAwMCkgIiBwb2ludHM9IjM0IDg5IDM4IDk3IDMwIDk3Ij48L3BvbHlnb24+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==') left center no-repeat;
+                padding-left: 15px;
+                margin-left: 40%;
+                color: #4f9a0a;
+            }
+            .dataupGen {
+                background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iOHB4IiBoZWlnaHQ9IjhweCIgdmlld0JveD0iMCAwIDggOCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNjAgKDg4MTAzKSAtIGh0dHBzOi8vc2tldGNoLmNvbSAtLT4KICAgIDx0aXRsZT5UcmlhbmdsZSBDb3B5PC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9InQzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTAwNi4wMDAwMDAsIC02MTMuMDAwMDAwKSIgZmlsbD0iIzdFRDMyMSIgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5NzYuMDAwMDAwLCA1MjQuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8cG9seWdvbiBpZD0iVHJpYW5nbGUtQ29weSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzQuMDAwMDAwLCA5My4wMDAwMDApIHNjYWxlKDEsIC0xKSB0cmFuc2xhdGUoLTM0LjAwMDAwMCwgLTkzLjAwMDAwMCkgIiBwb2ludHM9IjM0IDg5IDM4IDk3IDMwIDk3Ij48L3BvbHlnb24+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==') left center no-repeat;
+                padding-left: 15px;
+                margin-left: 40%;
+                color: #4f9a0a;
+            }
+            .dataNo {
+                text-align: right;
+                font-size: 10px;
+                font-weight: 700;
+            }
         }
     </style>
 </head>
@@ -490,7 +622,7 @@
                 <h4>HealthCare.</h4>
             </div>
             <div class="links">
-                <a href="#" class="mainlink">Corona Updates</a>
+                <a id="corona" href="#" class="mainlink">Corona Updates</a>
                 <a href="#">Help</a>
                 <a href="#">About</a>
             </div>
@@ -518,176 +650,1328 @@
         </div>
       </div>
 
-      <!-- ABOUT SECTION -->
 
-      <div class="about">
+       <!-- Corona -->
+       <div id="updates">
+        <div
+          class="corSticky slideShow"
+          id="_embedhtml"
+          style="bottom: 0px; z-index: 9"
+        >
+          <style>
+            * {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+            }
+            a {
+              text-decoration: none;
+            }
+            @font-face {
+              font-family: 'SF UI Display';
+              font-style: normal;
+              font-weight: 500;
+              src: local('SF UI Display Medium'),
+                url('https://edata.ndtv.com/coronavirus/fonts/sf-ui-display-medium-58646be638f96.woff')
+                  format('woff');
+            }
+            @font-face {
+              font-family: 'SF UI Display';
+              font-style: normal;
+              font-weight: 700;
+              src: local('SF UI Display Bold'),
+                url('https://edata.ndtv.com/coronavirus/fonts/sf-ui-display-bold-58646a511e3d9.woff')
+                  format('woff');
+            }
+            @font-face {
+              font-family: 'SF UI Display';
+              font-style: normal;
+              font-weight: 900;
+              src: local('SF UI Display Heavy'),
+                url('https://edata.ndtv.com/coronavirus/fonts/sf-ui-display-heavy-586470160b9e5.woff')
+                  format('woff');
+            }
+            .corSticky * {
+              font-family: 'SF UI Display';
+              box-sizing: border-box;
+            }
+            .corSticky {
+              position: fixed;
+              /* right: 10%; */
+              /* bottom: 0px; */
+              -webkit-tap-highlight-color: transparent;
+              transition: all 1s cubic-bezier(0.33, 1, 0.68, 1);
+            }
+
+            .corSticky-check {
+              width: 30%;
+              height: 30%;
+              bottom: 0;
+              display: block;
+              position: absolute;
+              cursor: pointer;
+              right: 0;
+              z-index: 9;
+              opacity: 0;
+              pointer-events: all;
+              -webkit-tap-highlight-color: transparent;
+            }
+            .corSticky-head {
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              padding: 7px;
+            }
+            .corSticky-logo {
+              width: 100px;
+              font-size: 0;
+              flex-shrink: 0;
+            }
+            .corSticky-logo a {
+              display: block;
+              font-size: 0;
+              line-height: normal;
+            }
+            .corSticky-logo img {
+              width: 100%;
+            }
+            .corSticky-logo span {
+              font-size: 11px;
+              font-weight: 500;
+              color: #313231;
+              text-transform: uppercase;
+            }
+            .corSticky-expand {
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              background-color: #d8d8d8;
+              flex-shrink: 0;
+              position: relative;
+              cursor: pointer;
+            }
+            .corSticky-expand:before,
+            .corSticky-expand:after {
+              content: '';
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              width: 9px;
+              height: 2px;
+              background-color: #393939;
+              border-radius: 6px;
+            }
+            .corSticky-expand:after {
+              content: '';
+              width: 2px;
+              height: 9px;
+            }
+            .corSticky-head_graph {
+              width: 100%;
+              position: absolute;
+              display: flex;
+              justify-content: space-between;
+              padding: 0px 7px 7px 7px;
+              transform: translateY(0);
+              opacity: 1;
+              transition: transform 1s cubic-bezier(0.33, 1, 0.68, 1);
+            }
+            .corSticky-heading {
+              display: flex;
+              align-items: center;
+              font-weight: 700;
+              font-size: 14px;
+              color: #313231;
+              letter-spacing: -0.5px;
+            }
+            .corSticky-total_no {
+              font-size: 11px;
+              font-weight: 700;
+              color: #c30000;
+            }
+            .corSticky-graph {
+              width: 100%;
+              flex-shrink: 0;
+            }
+            .dataUpBig {
+              background: url('https://edata.ndtv.com/coronavirus/images/red-tp-big.svg')
+                left center no-repeat;
+              padding-left: 10px;
+              margin-left: 5px;
+              background-size: 8px;
+            }
+            .corSticky-list {
+              width: 100%;
+              list-style: none;
+              display: none;
+            }
+            .corSticky-iteam {
+              width: 100%;
+            }
+            .corSticky-iteam-head {
+              width: 100%;
+              background-color: #ddd;
+              font-size: 12px;
+              font-weight: 900;
+              color: #ffffff;
+              text-transform: uppercase;
+              text-align: center;
+              line-height: normal;
+            }
+
+            .corSticky-iteam-txt {
+              display: flex;
+              align-items: center;
+              letter-spacing: -0.25px;
+              padding-left: 2px;
+            }
+            /* .tNum {
+              width: 70px;
+              text-align: right;
+              font-size: 12px;
+              font-weight: 700;
+              color: #717171;
+              letter-spacing: -0.5px;
+            } */
+            /* .dataNo {
+              text-align: right;
+              font-size: 10px;
+              font-weight: 700;
+            } */
+            .dataGraph {
+              width: 52px;
+              flex-shrink: 0;
+              margin-right: 7px;
+              display: flex;
+              align-items: center;
+            }
+            .corSticky-expand_info {
+              width: 100%;
+              position: relative;
+            }
+            .corSticky-iteam:nth-of-type(1) {
+              transform: translateY(50px);
+            }
+            .corSticky-iteam:nth-of-type(2) {
+              transform: translateY(80px);
+            }
+            .corSticky-iteam:nth-of-type(3) {
+              transform: translateY(110px);
+            }
+            .corSticky-iteam:nth-of-type(4) {
+              transform: translateY(140px);
+            }
+            .corSticky-check:checked {
+              bottom: auto;
+              top: 0;
+            }
+
+            .slideShow .corSticky-iteam:nth-of-type(1),
+            .slideShow .corSticky-iteam:nth-of-type(2),
+            .slideShow .corSticky-iteam:nth-of-type(3),
+            .slideShow .corSticky-iteam:nth-of-type(4) {
+              transform: translateY(0);
+              transition: transform 1s cubic-bezier(0.33, 1, 0.68, 1);
+            }
+            .slideShow .corSticky-head_graph {
+              transform: translateY(100%);
+              position: absolute;
+              opacity: 0;
+              z-index: -9;
+              transition: transform 1s cubic-bezier(0.33, 1, 0.68, 1);
+            }
+            .slideShow .corSticky-expand:after {
+              transition: all 0.7s ease-in-out;
+              transform: rotate(90deg);
+              opacity: 0;
+            }
+
+            /* .dataupRed {
+              background: url('https://edata.ndtv.com/coronavirus/images/red-tp.svg')
+                left 4px no-repeat;
+              padding-left: 15px;
+              margin-left: 80px;
+              color: #c30000;
+            } */
+            /* .dataupGen {
+              background: url('https://edata.ndtv.com/coronavirus/images/green-tp.svg')
+                left 4px no-repeat;
+              padding-left: 15px;
+              margin-left: 80px;
+              color: #4f9a0a;
+            } */
+            /* .datadownGen {
+              background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iOHB4IiBoZWlnaHQ9IjhweCIgdmlld0JveD0iMCAwIDggOCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNjAgKDg4MTAzKSAtIGh0dHBzOi8vc2tldGNoLmNvbSAtLT4KICAgIDx0aXRsZT5UcmlhbmdsZSBDb3B5PC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9InQzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTAwNi4wMDAwMDAsIC02MTMuMDAwMDAwKSIgZmlsbD0iIzdFRDMyMSIgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5NzYuMDAwMDAwLCA1MjQuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8cG9seWdvbiBpZD0iVHJpYW5nbGUtQ29weSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzQuMDAwMDAwLCA5My4wMDAwMDApIHNjYWxlKDEsIC0xKSB0cmFuc2xhdGUoLTM0LjAwMDAwMCwgLTkzLjAwMDAwMCkgIiBwb2ludHM9IjM0IDg5IDM4IDk3IDMwIDk3Ij48L3BvbHlnb24+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==')
+                left center no-repeat;
+              padding-left: 15px;
+              margin-left: 80px;
+              color: #4f9a0a;
+            } */
+            .con-data {
+              background: #ebebeb;
+            }
+            .con-data .corSticky-iteam-head {
+              background: #717171;
+            }
+            .con-data .tNum {
+              color: #717171;
+            }
+            .act-data {
+              background: #ecf0f5;
+            }
+            .act-data .corSticky-iteam-head {
+              background: #a3c3ea;
+            }
+            .act-data .tNum {
+              color: #3a81d8;
+            }
+            .rec-data {
+              background: #e0e9db;
+            }
+            .rec-data .corSticky-iteam-head {
+              background: #a4c885;
+            }
+            .rec-data .tNum {
+              color: #4f9a0a;
+            }
+            .dea-data {
+              background: #efe6e6;
+            }
+            .dea-data .corSticky-iteam-head {
+              background: #e28993;
+            }
+            .dea-data .tNum {
+              color: #d0021b;
+            }
+          </style>
+          <div class="corSticky-wrap">
+            <div class="corSticky-head">
+              <div class="corSticky-logo" id="_corSticky-logo">
+                <a href="https://www.ndtv.com/coronavirus"
+                  ><img
+                    src="https://edata.ndtv.com/coronavirus/images/logocor.svg"
+                    alt=""
+                  /><span>Cases in India</span></a>
+            </div>
+            <div class="corSticky-expand"></div>
+        </div>
+        <div class="corSticky-expand_info">
+            <div class="corSticky-head_graph">
+                <div class="corSticky-heading" id="_corSticky-heading">
+                    2,18,92,676<span class="corSticky-total_no dataUpBig">4,01,078</span
+                  >
+                </div>
+                <div
+                  class="corSticky-graph _confgraph"
+                  id="_confgraphhead"
+                  style="width: 41px; overflow: hidden"
+                  data-highcharts-chart="0"
+                >
+                  <div
+                    id="highcharts-yedssug-0"
+                    dir="ltr"
+                    class="highcharts-container"
+                    style="
+                      position: relative;
+                      overflow: hidden;
+                      width: 41px;
+                      height: 14px;
+                      text-align: left;
+                      line-height: normal;
+                      z-index: 0;
+                      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                      user-select: none;
+                    "
+                  >
+                    <svg
+                      version="1.1"
+                      class="highcharts-root"
+                      style="
+                        font-family: 'Lucida Grande', 'Lucida Sans Unicode',
+                          Arial, Helvetica, sans-serif;
+                        font-size: 12px;
+                      "
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="41"
+                      height="14"
+                      viewBox="0 0 41 14"
+                    >
+                      <desc>Created with Highcharts 8.2.0</desc>
+                      <defs>
+                        <clipPath id="highcharts-yedssug-1-">
+                          <rect
+                            x="0"
+                            y="0"
+                            width="37"
+                            height="10"
+                            fill="none"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                      <rect
+                        fill="#f4f4f4"
+                        class="highcharts-background"
+                        x="0"
+                        y="0"
+                        width="41"
+                        height="14"
+                        rx="0"
+                        ry="0"
+                      ></rect>
+                      <rect
+                        fill="none"
+                        class="highcharts-plot-background"
+                        x="2"
+                        y="2"
+                        width="37"
+                        height="10"
+                      ></rect>
+                      <rect
+                        fill="none"
+                        class="highcharts-plot-border"
+                        data-z-index="1"
+                        x="2"
+                        y="2"
+                        width="37"
+                        height="10"
+                      ></rect>
+                      <g class="highcharts-series-group" data-z-index="3">
+                        <g
+                          class="highcharts-series highcharts-series-0 highcharts-spline-series highcharts-color-0"
+                          data-z-index="0.1"
+                          opacity="1"
+                          transform="translate(2,2) scale(1 1)"
+                          clip-path="url(#highcharts-yedssug-1-)"
+                        >
+                          <path
+                            fill="none"
+                            d="M 2.8179741051028 2.2926666666666673 C 2.8179741051028 2.2926666666666673 6.19954303122622 3.7334333333333225 8.4539223153085 4.321083333333333 C 10.7083015993907 4.9087333333333225 11.8354912414318 5.230916666666666 14.089870525514 5.230916666666666 C 16.3442498095964 5.230916666666666 17.4714394516376 4.057633333333413 19.72581873572 3.140416666666667 C 21.980198019802003 2.2232000000000816 23.107387661843 0.8053333333333352 25.361766945925 0.6448333333333345 C 27.616146230007406 0.4843333333333337 28.7433358720486 0.4843333333333337 30.997715156131 0.4843333333333337 C 33.2520944402134 0.4843333333333337 36.633663366337 1.576833333333333 36.633663366337 1.576833333333333"
+                            class="highcharts-graph"
+                            data-z-index="1"
+                            stroke="#818181"
+                            stroke-width="2"
+                            stroke-linejoin="round"
+                            stroke-linecap="round"
+                          ></path>
+                          <path
+                            fill="none"
+                            d="M 2.8179741051028 2.2926666666666673 C 2.8179741051028 2.2926666666666673 6.19954303122622 3.7334333333333225 8.4539223153085 4.321083333333333 C 10.7083015993907 4.9087333333333225 11.8354912414318 5.230916666666666 14.089870525514 5.230916666666666 C 16.3442498095964 5.230916666666666 17.4714394516376 4.057633333333413 19.72581873572 3.140416666666667 C 21.980198019802003 2.2232000000000816 23.107387661843 0.8053333333333352 25.361766945925 0.6448333333333345 C 27.616146230007406 0.4843333333333337 28.7433358720486 0.4843333333333337 30.997715156131 0.4843333333333337 C 33.2520944402134 0.4843333333333337 36.633663366337 1.576833333333333 36.633663366337 1.576833333333333"
+                            visibility="visible"
+                            data-z-index="2"
+                            class="highcharts-tracker-line"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke="rgba(192,192,192,0.0001)"
+                            stroke-width="22"
+                          ></path>
+                        </g>
+                        <g
+                          class="highcharts-markers highcharts-series-0 highcharts-spline-series highcharts-color-0 highcharts-tracker"
+                          data-z-index="0.1"
+                          opacity="1"
+                          transform="translate(2,2) scale(1 1)"
+                        >
+                          <path
+                            fill="#818181"
+                            d="M 36 4 A 2 2 0 1 1 36.001999999666666 3.9999990000000833 Z"
+                            opacity="1"
+                            class="highcharts-point highcharts-color-0"
+                          ></path>
+                        </g>
+                      </g>
+                      <text
+                        x="2"
+                        class="highcharts-title"
+                        data-z-index="4"
+                        style="color: #333333; font-size: 18px; fill: #333333"
+                        y="16"
+                      ></text>
+                      <text
+                        x="21"
+                        text-anchor="middle"
+                        class="highcharts-subtitle"
+                        data-z-index="4"
+                        style="color: #666666; fill: #666666"
+                        y="16"
+                      ></text>
+                      <text
+                        x="2"
+                        text-anchor="start"
+                        class="highcharts-caption"
+                        data-z-index="4"
+                        style="color: #666666; fill: #666666"
+                        y="24"
+                      ></text>
+                      <g class="highcharts-legend" data-z-index="7">
+                        <rect
+                          fill="none"
+                          class="highcharts-legend-box"
+                          rx="0"
+                          ry="0"
+                          x="0"
+                          y="0"
+                          width="8"
+                          height="8"
+                          visibility="hidden"
+                        ></rect>
+                        <g data-z-index="1"><g></g></g>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <ul class="corSticky-list" style="display: block">
+                <li class="corSticky-iteam con-data">
+                  <div class="corSticky-iteam-head">CASES</div>
+                  <div class="corSticky-iteam-info">
+                    <div class="corSticky-iteam-txt" id="_confirmdata">
+                      <span class="tNum">2,18,92,676</span
+                      ><span class="dataNo dataupRed">4,01,078</span>
+                </div>
+                <div class="dataGraph _confgraphs" id="_confgraphid" data-highcharts-chart="1" style="overflow: hidden">
+                    <div id="highcharts-yedssug-11" dir="ltr" class="highcharts-container" style="
+                          position: relative;
+                          overflow: hidden;
+                          width: 52px;
+                          height: 12px;
+                          text-align: left;
+                          line-height: normal;
+                          z-index: 0;
+                          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                          user-select: none;
+                        ">
+                        <svg version="1.1" class="highcharts-root" style="
+                            font-family: 'Lucida Grande', 'Lucida Sans Unicode',
+                              Arial, Helvetica, sans-serif;
+                            font-size: 12px;
+                          " xmlns="http://www.w3.org/2000/svg" width="52" height="12" viewBox="0 0 52 12">
+                          <desc>Created with Highcharts 8.2.0</desc>
+                          <defs>
+                            <clipPath id="highcharts-yedssug-12-">
+                              <rect
+                                x="0"
+                                y="0"
+                                width="48"
+                                height="8"
+                                fill="none"
+                              ></rect>
+                            </clipPath>
+                          </defs>
+                          <rect
+                            fill="#ebebeb"
+                            class="highcharts-background"
+                            x="0"
+                            y="0"
+                            width="52"
+                            height="12"
+                            rx="0"
+                            ry="0"
+                          ></rect>
+                          <rect
+                            fill="none"
+                            class="highcharts-plot-background"
+                            x="2"
+                            y="2"
+                            width="48"
+                            height="8"
+                          ></rect>
+                          <rect
+                            fill="none"
+                            class="highcharts-plot-border"
+                            data-z-index="1"
+                            x="2"
+                            y="2"
+                            width="48"
+                            height="8"
+                          ></rect>
+                          <g class="highcharts-series-group" data-z-index="3">
+                            <g
+                              class="highcharts-series highcharts-series-0 highcharts-spline-series highcharts-color-0"
+                              data-z-index="0.1"
+                              opacity="1"
+                              transform="translate(2,2) scale(1 1)"
+                              clip-path="url(#highcharts-yedssug-12-)"
+                            >
+                              <path
+                                fill="none"
+                                d="M 3.6557501904037 1.834133333333333 C 3.6557501904037 1.834133333333333 8.042650418888082 2.986746666666657 10.967250571211 3.4568666666666665 C 13.891850723533802 3.926986666666657 15.354150799695201 4.184733333333333 18.278750952018 4.184733333333333 C 21.203351104341202 4.184733333333333 22.6656511805028 3.2461066666667167 25.590251332826 2.5123333333333333 C 28.514851485148803 1.7785600000000499 29.9771515613102 0.6442666666666668 32.901751713633 0.5158666666666667 C 35.8263518659558 0.3874666666666666 37.2886519421172 0.3874666666666666 40.21325209444 0.3874666666666666 C 43.1378522467632 0.3874666666666666 47.524752475248 1.2614666666666663 47.524752475248 1.2614666666666663"
+                                class="highcharts-graph"
+                                data-z-index="1"
+                                stroke="#818181"
+                                stroke-width="2"
+                                stroke-linejoin="round"
+                                stroke-linecap="round"
+                              ></path>
+                              <path
+                                fill="none"
+                                d="M 3.6557501904037 1.834133333333333 C 3.6557501904037 1.834133333333333 8.042650418888082 2.986746666666657 10.967250571211 3.4568666666666665 C 13.891850723533802 3.926986666666657 15.354150799695201 4.184733333333333 18.278750952018 4.184733333333333 C 21.203351104341202 4.184733333333333 22.6656511805028 3.2461066666667167 25.590251332826 2.5123333333333333 C 28.514851485148803 1.7785600000000499 29.9771515613102 0.6442666666666668 32.901751713633 0.5158666666666667 C 35.8263518659558 0.3874666666666666 37.2886519421172 0.3874666666666666 40.21325209444 0.3874666666666666 C 43.1378522467632 0.3874666666666666 47.524752475248 1.2614666666666663 47.524752475248 1.2614666666666663"
+                                visibility="visible"
+                                data-z-index="2"
+                                class="highcharts-tracker-line"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke="rgba(192,192,192,0.0001)"
+                                stroke-width="22"
+                              ></path>
+                            </g>
+                            <g
+                              class="highcharts-markers highcharts-series-0 highcharts-spline-series highcharts-color-0 highcharts-tracker"
+                              data-z-index="0.1"
+                              opacity="1"
+                              transform="translate(2,2) scale(1 1)"
+                            >
+                              <path
+                                fill="#818181"
+                                d="M 47 3 A 2 2 0 1 1 47.001999999666666 2.9999990000000833 Z"
+                                opacity="1"
+                                class="highcharts-point highcharts-color-0"
+                              ></path>
+                            </g>
+                          </g>
+                          <text
+                            x="2"
+                            class="highcharts-title"
+                            data-z-index="4"
+                            style="
+                              color: #333333;
+                              font-size: 18px;
+                              fill: #333333;
+                            "
+                            y="16"
+                          ></text>
+                          <text
+                            x="26"
+                            text-anchor="middle"
+                            class="highcharts-subtitle"
+                            data-z-index="4"
+                            style="color: #666666; fill: #666666"
+                            y="16"
+                          ></text>
+                          <text
+                            x="2"
+                            text-anchor="start"
+                            class="highcharts-caption"
+                            data-z-index="4"
+                            style="color: #666666; fill: #666666"
+                            y="22"
+                          ></text>
+                          <g class="highcharts-legend" data-z-index="7">
+                            <rect
+                              fill="none"
+                              class="highcharts-legend-box"
+                              rx="0"
+                              ry="0"
+                              x="0"
+                              y="0"
+                              width="8"
+                              height="8"
+                              visibility="hidden"
+                            ></rect>
+                            <g data-z-index="1"><g></g></g>
+                          </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            </li>
+            <li class="corSticky-iteam act-data">
+                <div class="corSticky-iteam-head">ACTIVE</div>
+                <div class="corSticky-iteam-info">
+                    <div class="corSticky-iteam-txt" id="_activedata">
+                        <span class="tNum">37,23,446</span
+                      ><span class="dataNo dataupRed">78,282</span>
+                    </div>
+                    <div class="dataGraph" id="_activegraph" data-highcharts-chart="2" style="overflow: hidden">
+                        <div id="highcharts-yedssug-22" dir="ltr" class="highcharts-container" style="
+                          position: relative;
+                          overflow: hidden;
+                          width: 52px;
+                          height: 12px;
+                          text-align: left;
+                          line-height: normal;
+                          z-index: 0;
+                          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                          user-select: none;
+                        ">
+                            <svg version="1.1" class="highcharts-root" style="
+                            font-family: 'Lucida Grande', 'Lucida Sans Unicode',
+                              Arial, Helvetica, sans-serif;
+                            font-size: 12px;
+                          " xmlns="http://www.w3.org/2000/svg" width="52" height="12" viewBox="0 0 52 12">
+                          <desc>Created with Highcharts 8.2.0</desc>
+                          <defs>
+                            <clipPath id="highcharts-yedssug-23-">
+                              <rect
+                                x="0"
+                                y="0"
+                                width="48"
+                                height="8"
+                                fill="none"
+                              ></rect>
+                            </clipPath>
+                          </defs>
+                          <rect
+                            fill="#ecf0f5"
+                            class="highcharts-background"
+                            x="0"
+                            y="0"
+                            width="52"
+                            height="12"
+                            rx="0"
+                            ry="0"
+                          ></rect>
+                          <rect
+                            fill="none"
+                            class="highcharts-plot-background"
+                            x="2"
+                            y="2"
+                            width="48"
+                            height="8"
+                          ></rect>
+                          <rect
+                            fill="none"
+                            class="highcharts-plot-border"
+                            data-z-index="1"
+                            x="2"
+                            y="2"
+                            width="48"
+                            height="8"
+                          ></rect>
+                          <g class="highcharts-series-group" data-z-index="3">
+                            <g
+                              class="highcharts-series highcharts-series-0 highcharts-spline-series highcharts-color-0"
+                              data-z-index="0.1"
+                              opacity="1"
+                              transform="translate(2,2) scale(1 1)"
+                              clip-path="url(#highcharts-yedssug-23-)"
+                            >
+                              <path
+                                fill="none"
+                                d="M 3.6557501904037 1.2555000000000005 C 3.6557501904037 1.2555000000000005 8.042650418888082 1.8761166666666513 10.967250571211 2.666833333333334 C 13.891850723533802 3.457549999999985 15.354150799695201 5.209083333333334 18.278750952018 5.209083333333334 C 21.203351104341202 5.209083333333334 22.6656511805028 5.209083333333334 25.590251332826 4.658666666666667 C 28.514851485148803 4.10825 29.9771515613102 1.4025833333333333 32.901751713633 1.4025833333333333 C 35.8263518659558 1.4025833333333333 37.2886519421172 1.4213833333333343 40.21325209444 1.4361666666666668 C 43.1378522467632 1.4509500000000013 47.524752475248 1.4765000000000006 47.524752475248 1.4765000000000006"
+                                class="highcharts-graph"
+                                data-z-index="1"
+                                stroke="#89b2e7"
+                                stroke-width="2"
+                                stroke-linejoin="round"
+                                stroke-linecap="round"
+                              ></path>
+                              <path
+                                fill="none"
+                                d="M 3.6557501904037 1.2555000000000005 C 3.6557501904037 1.2555000000000005 8.042650418888082 1.8761166666666513 10.967250571211 2.666833333333334 C 13.891850723533802 3.457549999999985 15.354150799695201 5.209083333333334 18.278750952018 5.209083333333334 C 21.203351104341202 5.209083333333334 22.6656511805028 5.209083333333334 25.590251332826 4.658666666666667 C 28.514851485148803 4.10825 29.9771515613102 1.4025833333333333 32.901751713633 1.4025833333333333 C 35.8263518659558 1.4025833333333333 37.2886519421172 1.4213833333333343 40.21325209444 1.4361666666666668 C 43.1378522467632 1.4509500000000013 47.524752475248 1.4765000000000006 47.524752475248 1.4765000000000006"
+                                visibility="visible"
+                                data-z-index="2"
+                                class="highcharts-tracker-line"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke="rgba(192,192,192,0.0001)"
+                                stroke-width="22"
+                              ></path>
+                            </g>
+                            <g
+                              class="highcharts-markers highcharts-series-0 highcharts-spline-series highcharts-color-0 highcharts-tracker"
+                              data-z-index="0.1"
+                              opacity="1"
+                              transform="translate(2,2) scale(1 1)"
+                            >
+                              <path
+                                fill="#89b2e7"
+                                d="M 47 3 A 2 2 0 1 1 47.001999999666666 2.9999990000000833 Z"
+                                opacity="1"
+                                class="highcharts-point highcharts-color-0"
+                              ></path>
+                            </g>
+                          </g>
+                          <text
+                            x="2"
+                            class="highcharts-title"
+                            data-z-index="4"
+                            style="
+                              color: #333333;
+                              font-size: 18px;
+                              fill: #333333;
+                            "
+                            y="16"
+                          ></text>
+                          <text
+                            x="26"
+                            text-anchor="middle"
+                            class="highcharts-subtitle"
+                            data-z-index="4"
+                            style="color: #666666; fill: #666666"
+                            y="16"
+                          ></text>
+                          <text
+                            x="2"
+                            text-anchor="start"
+                            class="highcharts-caption"
+                            data-z-index="4"
+                            style="color: #666666; fill: #666666"
+                            y="22"
+                          ></text>
+                          <g class="highcharts-legend" data-z-index="7">
+                            <rect
+                              fill="none"
+                              class="highcharts-legend-box"
+                              rx="0"
+                              ry="0"
+                              x="0"
+                              y="0"
+                              width="8"
+                              height="8"
+                              visibility="hidden"
+                            ></rect>
+                            <g data-z-index="1"><g></g></g>
+                          </g>
+                        </svg>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="corSticky-iteam rec-data">
+                <div class="corSticky-iteam-head">RECOVERED</div>
+                <div class="corSticky-iteam-info">
+                    <div class="corSticky-iteam-txt" id="_recoverdata">
+                        <span class="tNum">1,79,30,960</span
+                      ><span class="dataNo dataupGen">3,18,609</span>
+                    </div>
+                    <div class="dataGraph" id="_recovergraph" data-highcharts-chart="3" style="overflow: hidden">
+                        <div id="highcharts-yedssug-33" dir="ltr" class="highcharts-container" style="
+                          position: relative;
+                          overflow: hidden;
+                          width: 52px;
+                          height: 12px;
+                          text-align: left;
+                          line-height: normal;
+                          z-index: 0;
+                          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                          user-select: none;
+                        ">
+                            <svg version="1.1" class="highcharts-root" style="
+                            font-family: 'Lucida Grande', 'Lucida Sans Unicode',
+                              Arial, Helvetica, sans-serif;
+                            font-size: 12px;
+                          " xmlns="http://www.w3.org/2000/svg" width="52" height="12" viewBox="0 0 52 12">
+                          <desc>Created with Highcharts 8.2.0</desc>
+                          <defs>
+                            <clipPath id="highcharts-yedssug-34-">
+                              <rect
+                                x="0"
+                                y="0"
+                                width="48"
+                                height="8"
+                                fill="none"
+                              ></rect>
+                            </clipPath>
+                          </defs>
+                          <rect
+                            fill="#e0e9db"
+                            class="highcharts-background"
+                            x="0"
+                            y="0"
+                            width="52"
+                            height="12"
+                            rx="0"
+                            ry="0"
+                          ></rect>
+                          <rect
+                            fill="none"
+                            class="highcharts-plot-background"
+                            x="2"
+                            y="2"
+                            width="48"
+                            height="8"
+                          ></rect>
+                          <rect
+                            fill="none"
+                            class="highcharts-plot-border"
+                            data-z-index="1"
+                            x="2"
+                            y="2"
+                            width="48"
+                            height="8"
+                          ></rect>
+                          <g class="highcharts-series-group" data-z-index="3">
+                            <g
+                              class="highcharts-series highcharts-series-0 highcharts-spline-series highcharts-color-0"
+                              data-z-index="0.1"
+                              opacity="1"
+                              transform="translate(2,2) scale(1 1)"
+                              clip-path="url(#highcharts-yedssug-34-)"
+                            >
+                              <path
+                                fill="none"
+                                d="M 3.6557501904037 6.427 C 3.6557501904037 6.427 8.042650418888082 7.8536 10.967250571211 7.8536 C 13.891850723533802 7.8536 15.354150799695201 5.450479999999896 18.278750952018 3.9421999999999997 C 21.203351104341202 2.433919999999896 22.6656511805028 0.3121999999999998 25.590251332826 0.3121999999999998 C 28.514851485148803 0.3121999999999998 29.9771515613102 2.1773999999999996 32.901751713633 2.1773999999999996 C 35.8263518659558 2.1773999999999996 37.2886519421172 1.6985999999999999 40.21325209444 1.6985999999999999 C 43.1378522467632 1.6985999999999999 47.524752475248 4.2782 47.524752475248 4.2782"
+                                class="highcharts-graph"
+                                data-z-index="1"
+                                stroke="#83c06c"
+                                stroke-width="2"
+                                stroke-linejoin="round"
+                                stroke-linecap="round"
+                              ></path>
+                              <path
+                                fill="none"
+                                d="M 3.6557501904037 6.427 C 3.6557501904037 6.427 8.042650418888082 7.8536 10.967250571211 7.8536 C 13.891850723533802 7.8536 15.354150799695201 5.450479999999896 18.278750952018 3.9421999999999997 C 21.203351104341202 2.433919999999896 22.6656511805028 0.3121999999999998 25.590251332826 0.3121999999999998 C 28.514851485148803 0.3121999999999998 29.9771515613102 2.1773999999999996 32.901751713633 2.1773999999999996 C 35.8263518659558 2.1773999999999996 37.2886519421172 1.6985999999999999 40.21325209444 1.6985999999999999 C 43.1378522467632 1.6985999999999999 47.524752475248 4.2782 47.524752475248 4.2782"
+                                visibility="visible"
+                                data-z-index="2"
+                                class="highcharts-tracker-line"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke="rgba(192,192,192,0.0001)"
+                                stroke-width="22"
+                              ></path>
+                            </g>
+                            <g
+                              class="highcharts-markers highcharts-series-0 highcharts-spline-series highcharts-color-0 highcharts-tracker"
+                              data-z-index="0.1"
+                              opacity="1"
+                              transform="translate(2,2) scale(1 1)"
+                            >
+                              <path
+                                fill="#83c06c"
+                                d="M 47 6 A 2 2 0 1 1 47.001999999666666 5.999999000000083 Z"
+                                opacity="1"
+                                class="highcharts-point highcharts-color-0"
+                              ></path>
+                            </g>
+                          </g>
+                          <text
+                            x="2"
+                            class="highcharts-title"
+                            data-z-index="4"
+                            style="
+                              color: #333333;
+                              font-size: 18px;
+                              fill: #333333;
+                            "
+                            y="16"
+                          ></text>
+                          <text
+                            x="26"
+                            text-anchor="middle"
+                            class="highcharts-subtitle"
+                            data-z-index="4"
+                            style="color: #666666; fill: #666666"
+                            y="16"
+                          ></text>
+                          <text
+                            x="2"
+                            text-anchor="start"
+                            class="highcharts-caption"
+                            data-z-index="4"
+                            style="color: #666666; fill: #666666"
+                            y="22"
+                          ></text>
+                          <g class="highcharts-legend" data-z-index="7">
+                            <rect
+                              fill="none"
+                              class="highcharts-legend-box"
+                              rx="0"
+                              ry="0"
+                              x="0"
+                              y="0"
+                              width="8"
+                              height="8"
+                              visibility="hidden"
+                            ></rect>
+                            <g data-z-index="1"><g></g></g>
+                          </g>
+                        </svg>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="corSticky-iteam dea-data">
+                <div class="corSticky-iteam-head">DEATHS</div>
+                <div class="corSticky-iteam-info">
+                    <div class="corSticky-iteam-txt" id="_deathdata">
+                        <span class="tNum">2,38,270</span
+                      ><span class="dataNo dataupRed">4,187</span>
+                    </div>
+                    <div class="dataGraph" id="_deathgraph" data-highcharts-chart="4" style="overflow: hidden">
+                        <div id="highcharts-yedssug-44" dir="ltr" class="highcharts-container" style="
+                          position: relative;
+                          overflow: hidden;
+                          width: 52px;
+                          height: 12px;
+                          text-align: left;
+                          line-height: normal;
+                          z-index: 0;
+                          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                          user-select: none;
+                        ">
+                            <svg version="1.1" class="highcharts-root" style="
+                            font-family: 'Lucida Grande', 'Lucida Sans Unicode',
+                              Arial, Helvetica, sans-serif;
+                            font-size: 12px;
+                          " xmlns="http://www.w3.org/2000/svg" width="52" height="12" viewBox="0 0 52 12">
+                          <desc>Created with Highcharts 8.2.0</desc>
+                          <defs>
+                            <clipPath id="highcharts-yedssug-45-">
+                              <rect
+                                x="0"
+                                y="0"
+                                width="48"
+                                height="8"
+                                fill="none"
+                              ></rect>
+                            </clipPath>
+                          </defs>
+                          <rect
+                            fill="#efe6e6"
+                            class="highcharts-background"
+                            x="0"
+                            y="0"
+                            width="52"
+                            height="12"
+                            rx="0"
+                            ry="0"
+                          ></rect>
+                          <rect
+                            fill="none"
+                            class="highcharts-plot-background"
+                            x="2"
+                            y="2"
+                            width="48"
+                            height="8"
+                          ></rect>
+                          <rect
+                            fill="none"
+                            class="highcharts-plot-border"
+                            data-z-index="1"
+                            x="2"
+                            y="2"
+                            width="48"
+                            height="8"
+                          ></rect>
+                          <g class="highcharts-series-group" data-z-index="3">
+                            <g
+                              class="highcharts-series highcharts-series-0 highcharts-spline-series highcharts-color-0"
+                              data-z-index="0.1"
+                              opacity="1"
+                              transform="translate(2,2) scale(1 1)"
+                              clip-path="url(#highcharts-yedssug-45-)"
+                            >
+                              <path
+                                fill="none"
+                                d="M 3.6557501904037 5.109999999999999 C 3.6557501904037 5.109999999999999 8.042650418888082 7.83 10.967250571211 7.83 C 13.891850723533802 7.83 15.354150799695201 7.83 18.278750952018 7.51 C 21.203351104341202 7.1899999999999995 22.6656511805028 5.2620000000000715 25.590251332826 4.199999999999999 C 28.514851485148803 3.138000000000072 29.9771515613102 2.2 32.901751713633 2.2 C 35.8263518659558 2.2 37.2886519421172 2.8499999999999996 40.21325209444 2.8499999999999996 C 43.1378522467632 2.8499999999999996 47.524752475248 0.1299999999999999 47.524752475248 0.1299999999999999"
+                                class="highcharts-graph"
+                                data-z-index="1"
+                                stroke="#db726f"
+                                stroke-width="2"
+                                stroke-linejoin="round"
+                                stroke-linecap="round"
+                              ></path>
+                              <path
+                                fill="none"
+                                d="M 3.6557501904037 5.109999999999999 C 3.6557501904037 5.109999999999999 8.042650418888082 7.83 10.967250571211 7.83 C 13.891850723533802 7.83 15.354150799695201 7.83 18.278750952018 7.51 C 21.203351104341202 7.1899999999999995 22.6656511805028 5.2620000000000715 25.590251332826 4.199999999999999 C 28.514851485148803 3.138000000000072 29.9771515613102 2.2 32.901751713633 2.2 C 35.8263518659558 2.2 37.2886519421172 2.8499999999999996 40.21325209444 2.8499999999999996 C 43.1378522467632 2.8499999999999996 47.524752475248 0.1299999999999999 47.524752475248 0.1299999999999999"
+                                visibility="visible"
+                                data-z-index="2"
+                                class="highcharts-tracker-line"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke="rgba(192,192,192,0.0001)"
+                                stroke-width="22"
+                              ></path>
+                            </g>
+                            <g
+                              class="highcharts-markers highcharts-series-0 highcharts-spline-series highcharts-color-0 highcharts-tracker"
+                              data-z-index="0.1"
+                              opacity="1"
+                              transform="translate(2,2) scale(1 1)"
+                            >
+                              <path
+                                fill="#db726f"
+                                d="M 47 2 A 2 2 0 1 1 47.001999999666666 1.9999990000000833 Z"
+                                opacity="1"
+                                class="highcharts-point highcharts-color-0"
+                              ></path>
+                            </g>
+                          </g>
+                          <text
+                            x="2"
+                            class="highcharts-title"
+                            data-z-index="4"
+                            style="
+                              color: #333333;
+                              font-size: 18px;
+                              fill: #333333;
+                            "
+                            y="16"
+                          ></text>
+                          <text
+                            x="26"
+                            text-anchor="middle"
+                            class="highcharts-subtitle"
+                            data-z-index="4"
+                            style="color: #666666; fill: #666666"
+                            y="16"
+                          ></text>
+                          <text
+                            x="2"
+                            text-anchor="start"
+                            class="highcharts-caption"
+                            data-z-index="4"
+                            style="color: #666666; fill: #666666"
+                            y="22"
+                          ></text>
+                          <g class="highcharts-legend" data-z-index="7">
+                            <rect
+                              fill="none"
+                              class="highcharts-legend-box"
+                              rx="0"
+                              ry="0"
+                              x="0"
+                              y="0"
+                              width="8"
+                              height="8"
+                              visibility="hidden"
+                            ></rect>
+                            <g data-z-index="1"><g></g></g>
+                          </g>
+                        </svg>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <script src="https://edata.ndtv.com/coronavirus/graph_sticky.js"></script>
+    </div>
+
+
+    <!-- ABOUT SECTION -->
+
+    <div class="about">
         <div class="aboutText" data-aos="fade-up" data-aos-duration="1000">
-          <h2>
-            How and Why to use this website? </h2>
-            <br />  
+            <h2>
+                How and Why to use this website? </h2>
+            <br />
             <img src="img/covidimage-removebg-preview.png" alt="" />
+        </div>
+        <div class="aboutList" data-aos="fade-left" data-aos-duration="1000">
+            <ol>
+                <li>
+                    <span>01</span>
+                    <p>
+                        This website serves you by giving you details about how to contact Police, Hospital or Fire Brigade in times of need.
+                    </p>
+                </li>
+                <li>
+                    <span>02</span>
+                    <p>
+                        You can also get various information about various diseases by using our Chatbot.
+                    </p>
+                </li>
+                <li>
+                    <span>03</span>
+                    <p>
+                        We also provide locations of nearby hospitals and police Stations through the map provided below.
+                    </p>
+                </li>
+                <li>
+                    <span>04</span>
+                    <p>
+                        Stay Calm, Stay Safe and Stay Healthy!
+                    </p>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- INFO SECTION -->
+
+    <div class="infoSection">
+        <div class="infoHeader" data-aos="fade-up" data-aos-duration="1000">
+            <h1>
+                Emergency <br />
+                <span style="color: #e0501b">Services.</span>
+            </h1>
+        </div>
+        <div class="infoCards">
+            <div id="mapPolice" class="card one" data-aos="fade-up" data-aos-duration="1000">
+                <div id="cardoneImg">
+                    <img src="img/police2.png" class="cardoneImg" alt="" data-aos="fade-up" data-aos-duration="1100" />
+                </div>
+                <div class="cardbgone"></div>
+                <div class="cardContent">
+                    <h2>Police Stations</h2>
+                    <p>
+                        Get the locations of nearby Police Stations.
+                    </p>
+                    <a href="#">
+                        <div class="cardBtn">
+                            <img src="img/next.png" alt="" class="cardIcon" />
+                        </div>
+                    </a>
+                </div>
             </div>
-            <div class="aboutList" data-aos="fade-left" data-aos-duration="1000">
-                <ol>
-                    <li>
-                        <span>01</span>
-                        <p>
-                           This website serves you by giving you details about how to contact Police, Hospital or Fire Brigade in times of need.
-                        </p>
-                    </li>
-                    <li>
-                        <span>02</span>
-                        <p>
-                            You can also get various information about various diseases by using our Chatbot.
-                        </p>
-                    </li>
-                    <li>
-                        <span>03</span>
-                        <p>
-                            We also provide locations of nearby hospitals and police Stations through the map provided below.
-                        </p>
-                    </li>
-                    <li>
-                        <span>04</span>
-                        <p>
-                           Stay Calm, Stay Safe and Stay Healthy!
-                        </p>
-                    </li>
-                </ol>
+            <div id="mapFire" class="card two" data-aos="fade-up" data-aos-duration="1300">
+                <div id="cardtwoImg">
+                    <img src="img/fire.png" class="cardtwoImg" alt="" data-aos="fade-up" data-aos-duration="1200" />
+                </div>
+                <div class="cardbgtwo"></div>
+                <div class="cardContent">
+                    <h2>Fire Brigade</h2>
+                    <p>
+                        Get the locations of nearby Fire Stations.
+                    </p>
+                    <a href="#">
+                        <div class="cardBtn">
+                            <img src="img/next.png" alt="" class="cardIcon" />
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div id="mapAmbu" class="card three" data-aos="fade-up" data-aos-duration="1600">
+                <div id="cardthreeImg">
+                    <img src="img/ambulance.png" class="cardthreeImg cardthreeImg2" alt="" data-aos="fade-up" data-aos-duration="1300" />
+                </div>
+                <div class="cardbgone"></div>
+                <div class="cardContent">
+                    <h2>Track My Ambulance</h2>
+                    <p>
+                        Nearby Ambulances for emergency Situations.
+                    </p>
+                    <a href="#">
+                        <div class="cardBtn">
+                            <img src="img/next.png" alt="" class="cardIcon" />
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
+    </div>
 
-        <!-- INFO SECTION -->
+    <!-- Counter -->
+    <section class="counter">
+        <div class="container">
+            <div class="box-container">
+                <div class="box" data-aos="fade-up">
+                    <i class="fas fa-hospital"></i>
+                    <span>120+</span>
+                    <h3>Hospitals</h3>
+                </div>
 
-        <div class="infoSection">
-            <div class="infoHeader" data-aos="fade-up" data-aos-duration="1000">
-                <h1>
-                    Emergency  <br />
-                    <span style="color: #e0501b">Services.</span>
-                </h1>
-            </div>
-            <div class="infoCards">
-                <div class="card one" data-aos="fade-up" data-aos-duration="1000">
-                    <div id="cardoneImg">
-                        <img src="img/police2.png" class="cardoneImg" alt="" data-aos="fade-up" data-aos-duration="1100" />
-                    </div>
-                    <div class="cardbgone"></div>
-                    <div class="cardContent">
-                        <h2>Police Stations</h2>
-                        <p>
-                            Get the locations of nearby Police Stations.
-                        </p>
-                        <a href="#">
-                            <div class="cardBtn">
-                                <img src="img/next.png" alt="" class="cardIcon" />
-                            </div>
-                        </a>
-                    </div>
+                <div class="box" data-aos="fade-up">
+                    <i class="fas fa-users"></i>
+                    <span>100+</span>
+                    <h3>staff</h3>
                 </div>
-                <div class="card two" data-aos="fade-up" data-aos-duration="1300">
-                    <div id="cardtwoImg">
-                        <img src="img/fire.png" class="cardtwoImg" alt="" data-aos="fade-up" data-aos-duration="1200" />
-                    </div>
-                    <div class="cardbgtwo"></div>
-                    <div class="cardContent">
-                        <h2>Fire Brigade</h2>
-                        <p>
-                            Get the locations of nearby Fire Stations.
-                        </p>
-                        <a href="#">
-                            <div class="cardBtn">
-                                <img src="img/next.png" alt="" class="cardIcon" />
-                            </div>
-                        </a>
-                    </div>
+
+                <div class="box" data-aos="fade-up">
+                    <i class="fas fa-smile"></i>
+                    <span>1200+</span>
+                    <h3>happy patients</h3>
                 </div>
-                <div class="card three" data-aos="fade-up" data-aos-duration="1600">
-                    <div id="cardthreeImg">
-                        <img src="img/ambulance.png" class="cardthreeImg cardthreeImg2" alt="" data-aos="fade-up" data-aos-duration="1300" />
-                    </div>
-                    <div class="cardbgone"></div>
-                    <div class="cardContent">
-                        <h2>Track My Ambulance</h2>
-                        <p>
-                            Nearby Ambulances for emergency Situations.
-                        </p>
-                        <a href="#">
-                            <div class="cardBtn">
-                                <img src="img/next.png" alt="" class="cardIcon" />
-                            </div>
-                        </a>
-                    </div>
+
+                <div class="box" data-aos="fade-up">
+                    <i class="fas fa-procedures"></i>
+                    <span>130+</span>
+                    <h3>bed facility</h3>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Counter -->
-        <section class="counter">
-            <div class="container">
-                <div class="box-container">
-                    <div class="box" data-aos="fade-up">
-                        <i class="fas fa-hospital"></i>
-                        <span>120+</span>
-                        <h3>Hospitals</h3>
-                    </div>
+    <!-- BANNER AND FOOTER -->
 
-                    <div class="box" data-aos="fade-up">
-                        <i class="fas fa-users"></i>
-                        <span>100+</span>
-                        <h3>staff</h3>
-                    </div>
-
-                    <div class="box" data-aos="fade-up">
-                        <i class="fas fa-smile"></i>
-                        <span>1200+</span>
-                        <h3>happy patients</h3>
-                    </div>
-
-                    <div class="box" data-aos="fade-up">
-                        <i class="fas fa-procedures"></i>
-                        <span>130+</span>
-                        <h3>bed facility</h3>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- BANNER AND FOOTER -->
-
-        <div class="banner">
-            <div class="bannerText" data-aos="fade-right" data-aos-duration="1000">
-                <h1>
-                   Interact with Our Chatbot <br />
-                    <span style="font-size: 1.6vw; font-weight: normal" class="bannerInnerText">
+    <div class="banner">
+        <div class="bannerText" data-aos="fade-right" data-aos-duration="1000">
+            <h1>
+                Interact with Our Chatbot <br />
+                <span style="font-size: 1.6vw; font-weight: normal" class="bannerInnerText">
               Stay Updated and get all your medical needs taken care of!
             </span>
-                </h1>
-                <a href="#"> <img src="img/chatbot-logo-removebg-preview.png" alt="" /> </a>
-            </div>
-            <div class="bannerImg" data-aos="fade-up" data-aos-duration="1000">
-                <img src="img/MobileApp.png" alt="" />
-            </div>
+            </h1>
+            <a href="#"> <img src="img/chatbot-logo-removebg-preview.png" alt="" /> </a>
         </div>
-
-        <!-- Maps -->
-
-        <iframe width="1600" height="450" style="border: 5" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/search?q=hospitals%20in%20indore&key=AIzaSyDd2AeyXCohymH6I8R7XrtPlxvpm4e2Xls"></iframe>
-
-        <!-- Footer -->
-
-        <div class="footer">
-            <h2>HealthCare.</h2>
-            <div class="footerlinks">
-                <a href="#" class="mainlink">Corona Updates</a>
-                <a href="#">Help</a>
-                <a href="#">About</a>
-            </div>
+        <div class="bannerImg" data-aos="fade-up" data-aos-duration="1000">
+            <img src="img/MobileApp.png" alt="" />
         </div>
+    </div>
+
+    <!-- Maps -->
+
+    <iframe width="1600" height="450" style="border: 5" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/search?q=hospitals%20in%20indore&key=AIzaSyDd2AeyXCohymH6I8R7XrtPlxvpm4e2Xls"></iframe>
+
+    <!-- Footer -->
+
+    <div class="footer">
+        <h2>HealthCare.</h2>
+        <div class="footerlinks">
+            <a href="#" class="mainlink">Corona Updates</a>
+            <a href="#">Help</a>
+            <a href="#">About</a>
+        </div>
+    </div>
     </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+
+        map = document.getElementById('maps');
+        // console.log(map.src)
+        var mapId;
+        var Place;
+
+        mapPolice = document.getElementById('mapPolice');
+        mapFire = document.getElementById('mapFire');
+        mapAmbu = document.getElementById('mapAmbu');
+
+        mapPolice.addEventListener('click', police);
+        mapFire.addEventListener('click', fire);
+        mapAmbu.addEventListener('mouseover', ambu);
+
+        function police() {
+            var mapId = 'police%20station';
+            map.src =
+                'https://www.google.com/maps/embed/v1/search?q=' +
+                mapId +
+                '%20in%20bhopal&key=AIzaSyDd2AeyXCohymH6I8R7XrtPlxvpm4e2Xls';
+            console.log(map.src);
+        }
+
+        function fire() {
+            var mapId = 'fire%20station';
+            map.src =
+                'https://www.google.com/maps/embed/v1/search?q=' +
+                mapId +
+                '%20in%20bhopal&key=AIzaSyDd2AeyXCohymH6I8R7XrtPlxvpm4e2Xls';
+            console.log(map.src);
+        }
+
+        function ambu() {
+            var mapId = 'hospitals';
+            map.src =
+                'https://www.google.com/maps/embed/v1/search?q=' +
+                mapId +
+                '%20in%20bhopal&key=AIzaSyDd2AeyXCohymH6I8R7XrtPlxvpm4e2Xls';
+            // document.body.style.backgroundColor = 'Pink'
+        }
+
+        // map.src = 'https://www.google.com/maps/embed/v1/search?q=' + { mapId } + '%20in%20bhopal&key=AIzaSyDd2AeyXCohymH6I8R7XrtPlxvpm4e2Xls'
+
+        // Updates
+
+        updates = document.getElementById('updates');
+
+        updates.style.display = 'none';
+
+        corona = document.getElementById('corona');
+
+        corona.addEventListener('click', update);
+
+        function update() {
+            if (updates.style.display == 'none') {
+                updates.style.display = 'block';
+            } else {
+                updates.style.display = 'none';
+            }
+        }
     </script>
 </body>
 
