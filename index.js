@@ -1,10 +1,28 @@
-var place = ''
+var place
 
-function getLocation() {
-    if (place == '') {
-        place = prompt('Where are you now?')
-        console.log(place)
-    }
+window.onload = (event) => {
+    swal({
+            title: "Where are you now?",
+            text: "Please fill it correctly so that we can customize our site according to location.",
+            type: "input",
+            showCancelButton: false,
+            closeOnConfirm: false,
+            animation: "slide-from-top",
+            inputPlaceholder: "City/Town/Village"
+        },
+        function(inputValue) {
+            place = inputValue
+            if (inputValue === null) return false;
+
+            if (inputValue === "") {
+                swal.showInputError("Please write something!");
+                return false
+            }
+
+            swal("Thanks!", "You are near: " + inputValue, "success");
+            // console.log(place)
+
+        });
 }
 
 map = document.getElementById('maps')
