@@ -106,6 +106,7 @@
         
         .about {
             height: 600px;
+            margin-top: 100px;
             padding: 50px;
             display: flex;
             flex-direction: row;
@@ -120,14 +121,16 @@
         }
         
         .aboutText h1 {
+            font-size: 42px;
             position: relative;
-            left: 110px;
+            left: 620px;
+            top: 55px;
         }
         
         .aboutText img {
-            width: 25vw;
+            width: 30vw;
             position: absolute;
-            top: 50px;
+            top: -20px;
         }
         
         .aboutList {
@@ -491,13 +494,14 @@
                 height: 100px;
             }
             .aboutText h1 {
-                left: 40px;
-                font-size: 5vw;
+                left: 75px;
+                font-size: 9vw;
+                top: -15px;
             }
             .aboutText img {
-                width: 16vw;
-                top: 10px;
-                left: -30px;
+                width: 42vw;
+                top: -55px;
+                left: -20px;
             }
             .aboutList {
                 width: 75%;
@@ -650,9 +654,8 @@
         </div>
       </div>
 
-
-       <!-- Corona -->
-       <div id="updates">
+      <!-- Corona -->
+      <div id="updates">
         <div
           class="corSticky slideShow"
           id="_embedhtml"
@@ -1741,14 +1744,14 @@
     <script src="https://edata.ndtv.com/coronavirus/graph_sticky.js"></script>
     </div>
 
-
     <!-- ABOUT SECTION -->
 
     <div class="about">
         <div class="aboutText" data-aos="fade-up" data-aos-duration="1000">
-            <h2>
-                How and Why to use this website? </h2>
-            <br />
+            <h1 id="abtext">
+                Why and How to
+                <span style="color: #2f8be0">Use this Website</span>
+            </h1>
             <img src="img/covidimage-removebg-preview.png" alt="" />
         </div>
         <div class="aboutList" data-aos="fade-left" data-aos-duration="1000">
@@ -1773,9 +1776,7 @@
                 </li>
                 <li>
                     <span>04</span>
-                    <p>
-                        Stay Calm, Stay Safe and Stay Healthy!
-                    </p>
+                    <p>Stay Calm, Stay Safe and Stay Healthy!</p>
                 </li>
             </ol>
         </div>
@@ -1798,9 +1799,7 @@
                 <div class="cardbgone"></div>
                 <div class="cardContent">
                     <h2>Police Stations</h2>
-                    <p>
-                        Get the locations of nearby Police Stations.
-                    </p>
+                    <p>Get the locations of nearby Police Stations.</p>
                     <a href="#">
                         <div class="cardBtn">
                             <img src="img/next.png" alt="" class="cardIcon" />
@@ -1815,9 +1814,7 @@
                 <div class="cardbgtwo"></div>
                 <div class="cardContent">
                     <h2>Fire Brigade</h2>
-                    <p>
-                        Get the locations of nearby Fire Stations.
-                    </p>
+                    <p>Get the locations of nearby Fire Stations.</p>
                     <a href="#">
                         <div class="cardBtn">
                             <img src="img/next.png" alt="" class="cardIcon" />
@@ -1832,9 +1829,7 @@
                 <div class="cardbgone"></div>
                 <div class="cardContent">
                     <h2>Track My Ambulance</h2>
-                    <p>
-                        Nearby Ambulances for emergency Situations.
-                    </p>
+                    <p>Nearby Ambulances for emergency Situations.</p>
                     <a href="#">
                         <div class="cardBtn">
                             <img src="img/next.png" alt="" class="cardIcon" />
@@ -1886,7 +1881,9 @@
               Stay Updated and get all your medical needs taken care of!
             </span>
             </h1>
-            <a href="#"> <img src="img/chatbot-logo-removebg-preview.png" alt="" /> </a>
+            <a href="#">
+                <img src="img/chatbot-logo-removebg-preview.png" alt="" />
+            </a>
         </div>
         <div class="bannerImg" data-aos="fade-up" data-aos-duration="1000">
             <img src="img/MobileApp.png" alt="" />
